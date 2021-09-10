@@ -1,0 +1,27 @@
+{
+  "name": "breaknotifier",
+  "version": "1.0.0",
+  "description": "Break notifier , notify every 30 mins to standup while doing a desk/sedantry job",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": "Madhavan",
+  "devDependencies": {
+    "electron": "^8.2.5",
+    "electron-builder": "^22.11.7"
+  },
+  "dependencies": {
+    "electron-store": "^5.1.1"
+  },
+
+ "build": {
+   "appId": "com.maddy.breaknotifier",
+   "win": {
+     "target": "nsis",
+     "icon": "build/icon.ico"
+   }
+}
+
+}
